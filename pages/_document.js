@@ -143,6 +143,13 @@ export default class MyDocument extends Document {
           `,
             }}
           />
+          <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MFZ3HRV');</script>
+<!-- End Google Tag Manager -->
           <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KXNXG3Z"></script>
         </Head>
         <script async src="https://integrazap.com.br/gadget-v.1/wapp-flutuante.js?x=318391f35f10fb6337773b6ef8be8044&y=96754498797&z=balaiodacriacao.com.br"></script>
@@ -171,6 +178,10 @@ export default class MyDocument extends Document {
     <script src="assets/js/revolution/revolution-init.js"></script>
 
         </body>
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFZ3HRV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
       </Html>
     )
   }
