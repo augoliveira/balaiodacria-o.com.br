@@ -143,6 +143,7 @@ export default class MyDocument extends Document {
           `,
             }}
           />
+          <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KXNXG3Z"></script>
         </Head>
         <script async src="https://integrazap.com.br/gadget-v.1/wapp-flutuante.js?x=318391f35f10fb6337773b6ef8be8044&y=96754498797&z=balaiodacriacao.com.br"></script>
         <body>
