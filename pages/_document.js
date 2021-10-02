@@ -3,7 +3,7 @@ const APP_NAME = 'Agência Balaio da criação'
 const APP_DESCRIPTION = 'Balaio da Criação | Agência especializada em Marketing Digital.'
 import { GA_TRACKING_ID } from '../lib/gtag'
 import { FB_PIXEL_ID } from '../lib/fpixel'
-
+import { GTM_ID } from '../lib/gtm'
 export default class MyDocument extends Document {
   render() {
     return (
@@ -144,7 +144,14 @@ export default class MyDocument extends Document {
             }}
           />
           
-
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+              height="0"
+              width="0"
+              style={{ display: 'none', visibility: 'hidden' }}
+            />
+          </noscript>
 
           <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KXNXG3Z"></script>
         </Head>
