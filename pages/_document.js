@@ -1,8 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 const APP_NAME = 'Agência Balaio da criação'
 const APP_DESCRIPTION = 'Balaio da Criação | Agência especializada em Marketing Digital.'
-import { GA_TRACKING_ID } from '../lib/gtag'
-import { FB_PIXEL_ID } from '../lib/fpixel'
 import { GTM_ID } from '../lib/gtm'
 export default class MyDocument extends Document {
   render() {
@@ -102,30 +100,6 @@ export default class MyDocument extends Document {
                 {/* <link rel="shortcut icon" href={favicon} /> */}
                 <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css"/>
                 {/* Global Site Code Pixel - Facebook Pixel */}
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                !function(f,b,e,v,n,t,s)
-                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                n.queue=[];t=b.createElement(e);t.async=!0;
-                t.src=v;s=b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t,s)}(window, document,'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-                fbq('init', ${FB_PIXEL_ID});
-              `,
-            }}
-          />
-          <noscript>
-            <img
-              height="1"
-              width="1"
-              style={{ display: 'none' }}
-              src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-            />
-          </noscript>
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
