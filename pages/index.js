@@ -10,7 +10,7 @@ import Seo from "../components/Seo";
 import Newslettersobre from "../components/Newslettersobre";
 import Whatsapp from "../components/Whatsapp";
 import Footer from "../components/Footer";
-import * as fbq from '../lib/fpixel'
+
 
 export default function Home() {
     const handleClick = () => {
