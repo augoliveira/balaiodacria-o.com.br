@@ -101,7 +101,7 @@ export default class MyDocument extends Document {
                 <link rel="stylesheet" href="assets/css/revolution/navigation.css" />
                 {/* <link rel="shortcut icon" href={favicon} /> */}
                 <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css"/>
-                
+                {/* Global Site Code Pixel - Facebook Pixel */}
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -115,9 +115,9 @@ export default class MyDocument extends Document {
           `,
             }}
           />
-          
           <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLL7FJ2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          
 
           <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KXNXG3Z"></script>
         </Head>
