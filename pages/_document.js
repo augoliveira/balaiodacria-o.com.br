@@ -100,25 +100,16 @@ export default class MyDocument extends Document {
                 {/* <link rel="shortcut icon" href={favicon} /> */}
                 <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css"/>
                 {/* Global Site Code Pixel - Facebook Pixel */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-            }}
-          />
-          
-          <noscript>
+                <script dangerouslySetInnerHTML={{
+    __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WLL7FJ2');`,
+  }}/>
+  </Head>
+  <body >
+  <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
               height="0"
@@ -126,11 +117,6 @@ export default class MyDocument extends Document {
               style={{ display: 'none', visibility: 'hidden' }}
             />
           </noscript>
-
-          <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KXNXG3Z"></script>
-        </Head>
-        <script async src="https://integrazap.com.br/gadget-v.1/wapp-flutuante.js?x=318391f35f10fb6337773b6ef8be8044&y=96754498797&z=balaiodacriacao.com.br"></script>
-        <body>
           <Main />
           <NextScript />
           
